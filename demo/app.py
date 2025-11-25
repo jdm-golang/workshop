@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("Wind turbine supply chain optimization demo")
+st.title("Octanksson Turbines - Manufacturing Operations Assistant")
 
 # Initialize chat history
 if "messages" not in st.session_state:

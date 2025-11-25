@@ -2,11 +2,12 @@ from flask import Flask, request, jsonify, g
 import logging
 import os
 import uuid
-from strands import Agent, tool
+from strands import Agent
 from strands.models import BedrockModel
+from strands.tools.mcp import MCPClient
+from mcp.client.sse import sse_client
 from strands.session.file_session_manager import FileSessionManager
 
-# Configure logging
 DEBUG = os.getenv('DEBUG', '').lower() in ('true', '1', 'yes')
 logging.basicConfig(
     format="%(levelname)s | %(name)s | %(message)s",
@@ -15,28 +16,20 @@ logging.basicConfig(
 
 app = Flask(__name__)
 
-TRAVEL_AGENT_PROMPT = """You are a travel assistant that can help customers book their travel. 
+MANUFACTURING_AGENT_PROMPT = """You are a Manufacturing Operations Assistant for Octanksson Turbines, a wind turbine manufacturing facility.
 
-If a customer wants to book their travel, assist them with flight options for their destination.
+You have access to multiple manufacturing systems:
+- CMMS: Maintenance work orders and equipment data
+- ERP: Inventory, production orders, and business data
+- MES: Production line operations and real-time status
 
-Use the flight_search tool to provide flight carrier choices for their destination.
+Help users with:
+- Equipment maintenance status and work orders
+- Production line operations and schedules
+- Inventory levels and parts availability
+- Customer orders and production planning
 
-Provide the users with a friendly customer support response that includes available flights for their destination.
-"""
-
-@tool
-def flight_search(city: str) -> dict:
-    """Get available flight options to a city.
-
-    Args:
-        city: The name of the city
-    """
-    flights = {
-        "Atlanta": ["Delta Airlines", "Spirit Airlines"],
-        "Seattle": ["Alaska Airlines", "Delta Airlines"],
-        "New York": ["United Airlines", "JetBlue"]
-    }
-    return flights.get(city, [])
+Provide clear, actionable responses based on the manufacturing data."""
 
 bedrock_model = BedrockModel(
     model_id="us.amazon.nova-pro-v1:0",
@@ -58,21 +51,31 @@ def ask():
     if not query:
         return jsonify({"error": "Query not provided"}), 400
 
-    session_manager = FileSessionManager(
-        session_id=session_id,
-        storage_dir="./sessions"
-    )
+    try:
+        cmms_client = MCPClient(lambda: sse_client("http://127.0.0.1:8001/mcp"))
+        erp_client = MCPClient(lambda: sse_client("http://127.0.0.1:8002/mcp"))
+        mes_client = MCPClient(lambda: sse_client("http://127.0.0.1:8003/mcp"))
+        wpms_client = MCPClient(lambda: sse_client("http://127.0.0.1:8004/mcp"))
 
-    agent = Agent(
-        agent_id=session_id,
-        model=bedrock_model,
-        system_prompt=TRAVEL_AGENT_PROMPT,
-        tools=[flight_search],
-        session_manager=session_manager
-    )
+        with cmms_client, erp_client, mes_client, wpms_client:
+            all_tools = cmms_client.list_tools_sync() + erp_client.list_tools_sync() + mes_client.list_tools_sync() + wpms_client.list_tools_sync()
+            
+            session_manager = FileSessionManager(session_id=session_id, storage_dir="./sessions")
+            
+            agent = Agent(
+                agent_id=session_id,
+                model=bedrock_model,
+                system_prompt=MANUFACTURING_AGENT_PROMPT,
+                tools=all_tools,
+                session_manager=session_manager
+            )
 
-    response = agent(query)
-    return jsonify({"response": response.message['content'][0]['text']})
+            response = agent(query)
+            return jsonify({"response": response.message['content'][0]['text']})
+            
+    except Exception as e:
+        app.logger.error(f"Error: {e}")
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     os.makedirs("./sessions", exist_ok=True)
