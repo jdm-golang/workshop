@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, g
+from flask import Flask, request, jsonify, g, Response
 import logging
 import os
 import uuid
@@ -71,7 +71,16 @@ def ask():
             )
 
             response = agent(query)
-            return jsonify({"response": response.message['content'][0]['text']})
+            message_text = response.message['content'][0]['text']
+            
+            # Check if client expects Server-Sent Events
+            accept_header = request.headers.get('Accept', '')
+            if accept_header == 'text/event-stream':
+                def generate():
+                    yield f"data: {message_text}\n\n"
+                return Response(generate(), mimetype='text/event-stream')
+            
+            return jsonify({"response": message_text})
             
     except Exception as e:
         app.logger.error(f"Error: {e}")
