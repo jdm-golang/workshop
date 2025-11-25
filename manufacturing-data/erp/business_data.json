@@ -1,0 +1,708 @@
+{
+  "metadata": {
+    "system": "erp",
+    "data_type": "business_data",
+    "last_updated": "2025-10-02T12:00:00.000000",
+    "version": "2.0",
+    "generated_locally": true,
+    "description": "Wind Turbine Assembly Plant ERP Data"
+  },
+  "data": {
+    "customers": [
+      {
+        "customer_id": "CUST-0001",
+        "name": "GreenPower Energy Solutions",
+        "customer_type": "strategic",
+        "priority": "high",
+        "contact_email": "procurement@greenpower-energy.com",
+        "address": "1500 Renewable Way, Austin, TX 78701",
+        "credit_limit": 15000000.00
+      },
+      {
+        "customer_id": "CUST-0002",
+        "name": "Atlantic Wind Farms",
+        "customer_type": "premium",
+        "priority": "strategic",
+        "contact_email": "orders@atlanticwindfarms.com",
+        "address": "2200 Offshore Blvd, Virginia Beach, VA 23451",
+        "credit_limit": 25000000.00
+      },
+      {
+        "customer_id": "CUST-0003",
+        "name": "Midwest Wind Development",
+        "customer_type": "strategic",
+        "priority": "high",
+        "contact_email": "purchasing@midwestwind.com",
+        "address": "800 Prairie Wind Dr, Des Moines, IA 50309",
+        "credit_limit": 18000000.00
+      },
+      {
+        "customer_id": "CUST-0004",
+        "name": "Pacific Renewable Energy",
+        "customer_type": "premium",
+        "priority": "high",
+        "contact_email": "contracts@pacificrenewable.com",
+        "address": "3400 Coastal Highway, San Francisco, CA 94102",
+        "credit_limit": 30000000.00
+      },
+      {
+        "customer_id": "CUST-0005",
+        "name": "European Wind Consortium",
+        "customer_type": "strategic",
+        "priority": "strategic",
+        "contact_email": "procurement@eurowind.eu",
+        "address": "Windpark Strasse 45, Hamburg, Germany 20095",
+        "credit_limit": 35000000.00
+      },
+      {
+        "customer_id": "CUST-0006",
+        "name": "Texas Energy Partners",
+        "customer_type": "standard",
+        "priority": "medium",
+        "contact_email": "orders@texasenergy.com",
+        "address": "1200 Energy Plaza, Houston, TX 77002",
+        "credit_limit": 12000000.00
+      },
+      {
+        "customer_id": "CUST-0007",
+        "name": "Northern Wind Solutions",
+        "customer_type": "standard",
+        "priority": "medium",
+        "contact_email": "purchasing@northernwind.com",
+        "address": "500 Arctic Circle, Anchorage, AK 99501",
+        "credit_limit": 8000000.00
+      },
+      {
+        "customer_id": "CUST-0008",
+        "name": "Great Lakes Wind Power",
+        "customer_type": "premium",
+        "priority": "high",
+        "contact_email": "contracts@greatlakeswind.com",
+        "address": "1800 Lakeshore Dr, Chicago, IL 60601",
+        "credit_limit": 22000000.00
+      },
+      {
+        "customer_id": "CUST-0009",
+        "name": "Mountain Ridge Energy",
+        "customer_type": "standard",
+        "priority": "low",
+        "contact_email": "orders@mountainridge.com",
+        "address": "2500 Summit Ave, Denver, CO 80202",
+        "credit_limit": 10000000.00
+      },
+      {
+        "customer_id": "CUST-0010",
+        "name": "Coastal Wind Developments",
+        "customer_type": "strategic",
+        "priority": "high",
+        "contact_email": "procurement@coastalwind.com",
+        "address": "900 Oceanview Blvd, Miami, FL 33101",
+        "credit_limit": 20000000.00
+      }
+    ],
+    "sales_orders": [
+      {
+        "order_id": "SO-20250915-001",
+        "customer_id": "CUST-0001",
+        "customer_name": "GreenPower Energy Solutions",
+        "product_id": "WT-2MW",
+        "product_name": "Wind Turbine 2MW",
+        "quantity": 25,
+        "unit_price": 1250000.0,
+        "total_value": 31250000.0,
+        "order_date": "2025-09-15T08:00:00.000000",
+        "required_date": "2025-12-15T08:00:00.000000",
+        "promised_date": "2025-12-20T08:00:00.000000",
+        "status": "confirmed",
+        "priority": "high"
+      },
+      {
+        "order_id": "SO-20250920-002",
+        "customer_id": "CUST-0002",
+        "customer_name": "Atlantic Wind Farms",
+        "product_id": "WT-5MW",
+        "product_name": "Wind Turbine 5MW",
+        "quantity": 15,
+        "unit_price": 3200000.0,
+        "total_value": 48000000.0,
+        "order_date": "2025-09-20T08:00:00.000000",
+        "required_date": "2026-03-20T08:00:00.000000",
+        "promised_date": "2026-03-25T08:00:00.000000",
+        "status": "in_production",
+        "priority": "strategic"
+      },
+      {
+        "order_id": "SO-20250925-003",
+        "customer_id": "CUST-0003",
+        "customer_name": "Midwest Wind Development",
+        "product_id": "WT-3MW",
+        "product_name": "Wind Turbine 3MW",
+        "quantity": 30,
+        "unit_price": 1800000.0,
+        "total_value": 54000000.0,
+        "order_date": "2025-09-25T08:00:00.000000",
+        "required_date": "2026-01-25T08:00:00.000000",
+        "promised_date": "2026-02-01T08:00:00.000000",
+        "status": "confirmed",
+        "priority": "high"
+      },
+      {
+        "order_id": "SO-20250930-004",
+        "customer_id": "CUST-0004",
+        "customer_name": "Pacific Renewable Energy",
+        "product_id": "WT-8MW",
+        "product_name": "Wind Turbine 8MW",
+        "quantity": 8,
+        "unit_price": 4500000.0,
+        "total_value": 36000000.0,
+        "order_date": "2025-09-30T08:00:00.000000",
+        "required_date": "2026-06-30T08:00:00.000000",
+        "promised_date": "2026-07-15T08:00:00.000000",
+        "status": "pending",
+        "priority": "urgent"
+      },
+      {
+        "order_id": "SO-20251001-005",
+        "customer_id": "CUST-0005",
+        "customer_name": "European Wind Consortium",
+        "product_id": "WT-5MW",
+        "product_name": "Wind Turbine 5MW",
+        "quantity": 20,
+        "unit_price": 3200000.0,
+        "total_value": 64000000.0,
+        "order_date": "2025-10-01T08:00:00.000000",
+        "required_date": "2026-04-01T08:00:00.000000",
+        "promised_date": "2026-04-15T08:00:00.000000",
+        "status": "confirmed",
+        "priority": "strategic"
+      },
+      {
+        "order_id": "SO-20250910-006",
+        "customer_id": "CUST-0006",
+        "customer_name": "Texas Energy Partners",
+        "product_id": "WT-2MW",
+        "product_name": "Wind Turbine 2MW",
+        "quantity": 12,
+        "unit_price": 1250000.0,
+        "total_value": 15000000.0,
+        "order_date": "2025-09-10T08:00:00.000000",
+        "required_date": "2025-11-10T08:00:00.000000",
+        "promised_date": "2025-11-15T08:00:00.000000",
+        "status": "in_production",
+        "priority": "medium"
+      },
+      {
+        "order_id": "SO-20250905-007",
+        "customer_id": "CUST-0007",
+        "customer_name": "Northern Wind Solutions",
+        "product_id": "WT-3MW",
+        "product_name": "Wind Turbine 3MW",
+        "quantity": 6,
+        "unit_price": 1800000.0,
+        "total_value": 10800000.0,
+        "order_date": "2025-09-05T08:00:00.000000",
+        "required_date": "2025-12-05T08:00:00.000000",
+        "promised_date": "2025-12-10T08:00:00.000000",
+        "status": "delivered",
+        "priority": "medium"
+      },
+      {
+        "order_id": "SO-20250918-008",
+        "customer_id": "CUST-0008",
+        "customer_name": "Great Lakes Wind Power",
+        "product_id": "WT-5MW",
+        "product_name": "Wind Turbine 5MW",
+        "quantity": 10,
+        "unit_price": 3200000.0,
+        "total_value": 32000000.0,
+        "order_date": "2025-09-18T08:00:00.000000",
+        "required_date": "2026-02-18T08:00:00.000000",
+        "promised_date": "2026-02-25T08:00:00.000000",
+        "status": "confirmed",
+        "priority": "high"
+      },
+      {
+        "order_id": "SO-20250822-009",
+        "customer_id": "CUST-0009",
+        "customer_name": "Mountain Ridge Energy",
+        "product_id": "WT-2MW",
+        "product_name": "Wind Turbine 2MW",
+        "quantity": 8,
+        "unit_price": 1250000.0,
+        "total_value": 10000000.0,
+        "order_date": "2025-08-22T08:00:00.000000",
+        "required_date": "2025-10-22T08:00:00.000000",
+        "promised_date": "2025-10-25T08:00:00.000000",
+        "status": "shipped",
+        "priority": "low"
+      },
+      {
+        "order_id": "SO-20250928-010",
+        "customer_id": "CUST-0010",
+        "customer_name": "Coastal Wind Developments",
+        "product_id": "WT-3MW",
+        "product_name": "Wind Turbine 3MW",
+        "quantity": 18,
+        "unit_price": 1800000.0,
+        "total_value": 32400000.0,
+        "order_date": "2025-09-28T08:00:00.000000",
+        "required_date": "2026-01-28T08:00:00.000000",
+        "promised_date": "2026-02-05T08:00:00.000000",
+        "status": "in_production",
+        "priority": "high"
+      }
+    ],
+    "production_orders": [
+      {
+        "production_id": "PRO-20250915-001",
+        "sales_order_id": "SO-20250915-001",
+        "product_id": "WT-2MW",
+        "quantity": 25,
+        "status": "in_progress",
+        "created_date": "2025-09-15T08:00:00.000000",
+        "due_date": "2025-12-20T08:00:00.000000",
+        "start_date": "2025-09-20T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250920-002",
+        "sales_order_id": "SO-20250920-002",
+        "product_id": "WT-5MW",
+        "quantity": 15,
+        "status": "scheduled",
+        "created_date": "2025-09-20T08:00:00.000000",
+        "due_date": "2026-03-25T08:00:00.000000",
+        "start_date": "2025-10-15T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250925-003",
+        "sales_order_id": "SO-20250925-003",
+        "product_id": "WT-3MW",
+        "quantity": 30,
+        "status": "scheduled",
+        "created_date": "2025-09-25T08:00:00.000000",
+        "due_date": "2026-02-01T08:00:00.000000",
+        "start_date": "2025-11-01T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250910-006",
+        "sales_order_id": "SO-20250910-006",
+        "product_id": "WT-2MW",
+        "quantity": 12,
+        "status": "in_progress",
+        "created_date": "2025-09-10T08:00:00.000000",
+        "due_date": "2025-11-15T08:00:00.000000",
+        "start_date": "2025-09-15T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250905-007",
+        "sales_order_id": "SO-20250905-007",
+        "product_id": "WT-3MW",
+        "quantity": 6,
+        "status": "completed",
+        "created_date": "2025-09-05T08:00:00.000000",
+        "due_date": "2025-12-10T08:00:00.000000",
+        "start_date": "2025-09-10T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250918-008",
+        "sales_order_id": "SO-20250918-008",
+        "product_id": "WT-5MW",
+        "quantity": 10,
+        "status": "scheduled",
+        "created_date": "2025-09-18T08:00:00.000000",
+        "due_date": "2026-02-25T08:00:00.000000",
+        "start_date": "2025-12-01T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250822-009",
+        "sales_order_id": "SO-20250822-009",
+        "product_id": "WT-2MW",
+        "quantity": 8,
+        "status": "completed",
+        "created_date": "2025-08-22T08:00:00.000000",
+        "due_date": "2025-10-25T08:00:00.000000",
+        "start_date": "2025-08-25T08:00:00.000000"
+      },
+      {
+        "production_id": "PRO-20250928-010",
+        "sales_order_id": "SO-20250928-010",
+        "product_id": "WT-3MW",
+        "quantity": 18,
+        "status": "in_progress",
+        "created_date": "2025-09-28T08:00:00.000000",
+        "due_date": "2026-02-05T08:00:00.000000",
+        "start_date": "2025-10-05T08:00:00.000000"
+      }
+    ],
+    "inventory": [
+      {
+        "product_id": "WT-2MW",
+        "location_id": "LOC001",
+        "warehouse_id": "WH001",
+        "quantity_on_hand": 5,
+        "reorder_point": 2,
+        "last_received_date": "2025-09-28T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-2MW",
+        "location_id": "LOC002",
+        "warehouse_id": "WH002",
+        "quantity_on_hand": 3,
+        "reorder_point": 2,
+        "last_received_date": "2025-09-25T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-3MW",
+        "location_id": "LOC001",
+        "warehouse_id": "WH001",
+        "quantity_on_hand": 2,
+        "reorder_point": 1,
+        "last_received_date": "2025-09-30T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-3MW",
+        "location_id": "LOC003",
+        "warehouse_id": "WH003",
+        "quantity_on_hand": 4,
+        "reorder_point": 1,
+        "last_received_date": "2025-09-22T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-5MW",
+        "location_id": "LOC001",
+        "warehouse_id": "WH001",
+        "quantity_on_hand": 1,
+        "reorder_point": 1,
+        "last_received_date": "2025-09-15T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-5MW",
+        "location_id": "LOC002",
+        "warehouse_id": "WH002",
+        "quantity_on_hand": 2,
+        "reorder_point": 1,
+        "last_received_date": "2025-09-20T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-8MW",
+        "location_id": "LOC001",
+        "warehouse_id": "WH001",
+        "quantity_on_hand": 0,
+        "reorder_point": 1,
+        "last_received_date": "2025-08-15T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "WT-8MW",
+        "location_id": "LOC004",
+        "warehouse_id": "WH004",
+        "quantity_on_hand": 1,
+        "reorder_point": 1,
+        "last_received_date": "2025-09-10T08:00:00.000000",
+        "item_type": "finished_goods"
+      },
+      {
+        "product_id": "GBX-BEAR-001",
+        "product_name": "Gearbox Bearing Kit",
+        "location_id": "LOC005",
+        "warehouse_id": "WH005",
+        "quantity_on_hand": 0,
+        "reorder_point": 10,
+        "last_received_date": "2025-09-20T08:00:00.000000",
+        "item_type": "spare_parts",
+        "unit_price": 8500.0,
+        "lead_time_days": 14,
+        "applicable_machines": [
+          "GB001"
+        ]
+      },
+      {
+        "product_id": "GBX-FLTR-002",
+        "product_name": "Gearbox Filter Cartridge",
+        "location_id": "LOC005",
+        "warehouse_id": "WH005",
+        "quantity_on_hand": 45,
+        "reorder_point": 20,
+        "last_received_date": "2025-09-25T08:00:00.000000",
+        "item_type": "spare_parts",
+        "unit_price": 350.0,
+        "lead_time_days": 7,
+        "applicable_machines": [
+          "GB001"
+        ]
+      },
+      {
+        "product_id": "GBX-SEAL-003",
+        "product_name": "Gearbox Shaft Seal",
+        "location_id": "LOC005",
+        "warehouse_id": "WH005",
+        "quantity_on_hand": 18,
+        "reorder_point": 8,
+        "last_received_date": "2025-09-18T08:00:00.000000",
+        "item_type": "spare_parts",
+        "unit_price": 1250.0,
+        "lead_time_days": 10,
+        "applicable_machines": [
+          "GB001"
+        ]
+      },
+      {
+        "product_id": "GBX-OIL-004",
+        "product_name": "ISO VG 220 Gearbox Oil",
+        "location_id": "LOC005",
+        "warehouse_id": "WH005",
+        "quantity_on_hand": 120,
+        "reorder_point": 50,
+        "last_received_date": "2025-09-30T08:00:00.000000",
+        "item_type": "spare_parts",
+        "unit_price": 85.0,
+        "unit_of_measure": "liters",
+        "lead_time_days": 3,
+        "applicable_machines": [
+          "GB001"
+        ]
+      }
+    ],
+    "suppliers": [
+      {
+        "supplier_id": "SUP-0001",
+        "name": "Advanced Gearbox Systems",
+        "supplier_type": "strategic",
+        "contact_email": "orders@advancedgearbox.com",
+        "address": "1200 Industrial Blvd, Milwaukee, WI 53201",
+        "lead_time_days": 45,
+        "quality_rating": 4.8
+      },
+      {
+        "supplier_id": "SUP-0002",
+        "name": "TurboGen Electric Motors",
+        "supplier_type": "premium",
+        "contact_email": "procurement@turbogen.com",
+        "address": "800 Generator Way, Detroit, MI 48201",
+        "lead_time_days": 35,
+        "quality_rating": 4.9
+      },
+      {
+        "supplier_id": "SUP-0003",
+        "name": "Composite Blade Technologies",
+        "supplier_type": "strategic",
+        "contact_email": "sales@compositeblade.com",
+        "address": "2500 Fiber Drive, Wichita, KS 67202",
+        "lead_time_days": 60,
+        "quality_rating": 4.7
+      },
+      {
+        "supplier_id": "SUP-0004",
+        "name": "Tower Steel Fabricators",
+        "supplier_type": "standard",
+        "contact_email": "orders@towersteel.com",
+        "address": "3000 Steel Mill Rd, Pittsburgh, PA 15201",
+        "lead_time_days": 30,
+        "quality_rating": 4.6
+      },
+      {
+        "supplier_id": "SUP-0005",
+        "name": "Control Systems International",
+        "supplier_type": "premium",
+        "contact_email": "contracts@controlsys.com",
+        "address": "1500 Tech Park Dr, Austin, TX 78701",
+        "lead_time_days": 25,
+        "quality_rating": 4.9
+      },
+      {
+        "supplier_id": "SUP-0006",
+        "name": "Precision Bearing Solutions",
+        "supplier_type": "strategic",
+        "contact_email": "spares@precisionbearing.com",
+        "address": "2200 Bearing Way, Cleveland, OH 44101",
+        "lead_time_days": 14,
+        "quality_rating": 4.8
+      },
+      {
+        "supplier_id": "SUP-0007",
+        "name": "Industrial Filtration Corp",
+        "supplier_type": "standard",
+        "contact_email": "orders@industrialfiltration.com",
+        "address": "1800 Filter Blvd, Memphis, TN 38101",
+        "lead_time_days": 7,
+        "quality_rating": 4.6
+      },
+      {
+        "supplier_id": "SUP-0008",
+        "name": "Seal-Tech Manufacturing",
+        "supplier_type": "premium",
+        "contact_email": "sales@sealtech.com",
+        "address": "900 Seal Drive, Akron, OH 44301",
+        "lead_time_days": 10,
+        "quality_rating": 4.7
+      },
+      {
+        "supplier_id": "SUP-0009",
+        "name": "Premium Lubricants Inc",
+        "supplier_type": "standard",
+        "contact_email": "orders@premiumlube.com",
+        "address": "3500 Oil Refinery Rd, Houston, TX 77001",
+        "lead_time_days": 3,
+        "quality_rating": 4.5
+      }
+    ],
+    "purchase_orders": [
+      {
+        "po_id": "PO-20251001-001",
+        "supplier_id": "SUP-0001",
+        "supplier_name": "Advanced Gearbox Systems",
+        "item_description": "2MW Gearbox Assembly",
+        "quantity": 50,
+        "unit_price": 125000.0,
+        "total_value": 6250000.0,
+        "order_date": "2025-10-01T08:00:00.000000",
+        "required_date": "2025-11-15T08:00:00.000000",
+        "status": "confirmed"
+      },
+      {
+        "po_id": "PO-20251001-002",
+        "supplier_id": "SUP-0002",
+        "supplier_name": "TurboGen Electric Motors",
+        "item_description": "3MW Generator Unit",
+        "quantity": 30,
+        "unit_price": 180000.0,
+        "total_value": 5400000.0,
+        "order_date": "2025-10-01T08:00:00.000000",
+        "required_date": "2025-11-05T08:00:00.000000",
+        "status": "pending"
+      },
+      {
+        "po_id": "PO-20250928-003",
+        "supplier_id": "SUP-0003",
+        "supplier_name": "Composite Blade Technologies",
+        "item_description": "5MW Blade Set (3 blades)",
+        "quantity": 45,
+        "unit_price": 320000.0,
+        "total_value": 14400000.0,
+        "order_date": "2025-09-28T08:00:00.000000",
+        "required_date": "2025-11-27T08:00:00.000000",
+        "status": "confirmed"
+      },
+      {
+        "po_id": "PO-20250925-004",
+        "supplier_id": "SUP-0004",
+        "supplier_name": "Tower Steel Fabricators",
+        "item_description": "Tower Section - 80m Height",
+        "quantity": 25,
+        "unit_price": 85000.0,
+        "total_value": 2125000.0,
+        "order_date": "2025-09-25T08:00:00.000000",
+        "required_date": "2025-10-25T08:00:00.000000",
+        "status": "delivered"
+      },
+      {
+        "po_id": "PO-20250930-005",
+        "supplier_id": "SUP-0005",
+        "supplier_name": "Control Systems International",
+        "item_description": "Advanced Control Unit - 8MW",
+        "quantity": 10,
+        "unit_price": 75000.0,
+        "total_value": 750000.0,
+        "order_date": "2025-09-30T08:00:00.000000",
+        "required_date": "2025-10-25T08:00:00.000000",
+        "status": "confirmed"
+      },
+      {
+        "po_id": "PO-20251002-006",
+        "supplier_id": "SUP-0006",
+        "supplier_name": "Precision Bearing Solutions",
+        "item_description": "Gearbox Bearing Kit (GBX-BEAR-001)",
+        "quantity": 15,
+        "unit_price": 8500.0,
+        "total_value": 127500.0,
+        "order_date": "2025-10-02T08:00:00.000000",
+        "required_date": "2025-10-16T08:00:00.000000",
+        "status": "pending"
+      },
+      {
+        "po_id": "PO-20251002-007",
+        "supplier_id": "SUP-0007",
+        "supplier_name": "Industrial Filtration Corp",
+        "item_description": "Gearbox Filter Cartridge (GBX-FLTR-002)",
+        "quantity": 50,
+        "unit_price": 350.0,
+        "total_value": 17500.0,
+        "order_date": "2025-10-02T08:00:00.000000",
+        "required_date": "2025-10-09T08:00:00.000000",
+        "status": "confirmed"
+      },
+      {
+        "po_id": "PO-20251001-008",
+        "supplier_id": "SUP-0008",
+        "supplier_name": "Seal-Tech Manufacturing",
+        "item_description": "Gearbox Shaft Seal (GBX-SEAL-003)",
+        "quantity": 20,
+        "unit_price": 1250.0,
+        "total_value": 25000.0,
+        "order_date": "2025-10-01T08:00:00.000000",
+        "required_date": "2025-10-11T08:00:00.000000",
+        "status": "confirmed"
+      },
+      {
+        "po_id": "PO-20251002-009",
+        "supplier_id": "SUP-0009",
+        "supplier_name": "Premium Lubricants Inc",
+        "item_description": "ISO VG 220 Gearbox Oil (GBX-OIL-004)",
+        "quantity": 200,
+        "unit_price": 85.0,
+        "total_value": 17000.0,
+        "order_date": "2025-10-02T08:00:00.000000",
+        "required_date": "2025-10-05T08:00:00.000000",
+        "status": "delivered"
+      }
+    ],
+    "financial_metrics": {
+      "revenue": {
+        "current_month": 45000000.0,
+        "previous_month": 38000000.0,
+        "year_to_date": 420000000.0,
+        "target_annual": 550000000.0
+      },
+      "costs": {
+        "material_costs": 28000000.0,
+        "labor_costs": 8500000.0,
+        "overhead_costs": 4200000.0,
+        "total_costs": 40700000.0
+      },
+      "margins": {
+        "gross_margin_percent": 24.5,
+        "operating_margin_percent": 18.2,
+        "net_margin_percent": 15.8
+      },
+      "backlog": {
+        "total_value": 385000000.0,
+        "months_of_production": 8.5,
+        "confirmed_orders": 12,
+        "pending_orders": 3
+      }
+    },
+    "business_metrics": {
+      "order_fulfillment": {
+        "on_time_delivery_rate": 0.92,
+        "average_lead_time_days": 120,
+        "order_accuracy_rate": 0.98
+      },
+      "customer_satisfaction": {
+        "average_rating": 4.6,
+        "repeat_customer_rate": 0.85,
+        "complaint_resolution_time_days": 3.2
+      },
+      "operational_efficiency": {
+        "capacity_utilization": 0.87,
+        "inventory_turnover": 4.2,
+        "supplier_performance_score": 4.7
+      }
+    }
+  }
+}

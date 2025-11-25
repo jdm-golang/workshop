@@ -1,0 +1,935 @@
+{
+  "metadata": {
+    "system": "wpms",
+    "data_type": "workforce_data",
+    "last_updated": "2025-10-02T12:00:00.000000",
+    "version": "2.0",
+    "generated_locally": true,
+    "description": "Wind Turbine Assembly Plant Workforce Data"
+  },
+  "data": {
+    "employees": [
+      {
+        "employee_id": "OP001",
+        "name": "John Doe",
+        "role": "operator",
+        "shift": "morning",
+        "skill_level": 4,
+        "hourly_rate": 32.50,
+        "hire_date": "2023-03-15T08:00:00.000000",
+        "department": "Nacelle Assembly",
+        "is_on_call": false,
+        "certification_level": "Expert",
+        "specialization": "Gearbox Operations"
+      },
+      {
+        "employee_id": "OP002",
+        "name": "Jane Smith",
+        "role": "operator",
+        "shift": "morning",
+        "skill_level": 5,
+        "hourly_rate": 35.75,
+        "hire_date": "2022-01-20T08:00:00.000000",
+        "department": "Blade Manufacturing",
+        "is_on_call": false,
+        "certification_level": "Expert",
+        "specialization": "Composite Materials"
+      },
+      {
+        "employee_id": "OP003",
+        "name": "Bob Johnson",
+        "role": "operator",
+        "shift": "afternoon",
+        "skill_level": 4,
+        "hourly_rate": 33.25,
+        "hire_date": "2023-08-10T16:00:00.000000",
+        "department": "Tower Assembly",
+        "is_on_call": false,
+        "certification_level": "Advanced",
+        "specialization": "Welding Operations"
+      },
+      {
+        "employee_id": "OP004",
+        "name": "Maria Garcia",
+        "role": "operator",
+        "shift": "afternoon",
+        "skill_level": 5,
+        "hourly_rate": 36.00,
+        "hire_date": "2021-11-05T16:00:00.000000",
+        "department": "Nacelle Assembly",
+        "is_on_call": false,
+        "certification_level": "Expert",
+        "specialization": "Generator Systems"
+      },
+      {
+        "employee_id": "OP005",
+        "name": "Ahmed Hassan",
+        "role": "operator",
+        "shift": "night",
+        "skill_level": 4,
+        "hourly_rate": 34.50,
+        "hire_date": "2020-06-12T00:00:00.000000",
+        "department": "Logistics & Testing",
+        "is_on_call": false,
+        "certification_level": "Expert",
+        "specialization": "Final Testing"
+      },
+      {
+        "employee_id": "MT001",
+        "name": "Mike Wilson",
+        "role": "maintenance_tech",
+        "shift": "morning",
+        "skill_level": 4,
+        "hourly_rate": 42.75,
+        "hire_date": "2022-09-15T08:00:00.000000",
+        "department": "Maintenance",
+        "is_on_call": true,
+        "certification_level": "Advanced",
+        "specialization": "Mechanical Systems"
+      },
+      {
+        "employee_id": "MT002",
+        "name": "Sarah Chen",
+        "role": "maintenance_tech",
+        "shift": "afternoon",
+        "skill_level": 5,
+        "hourly_rate": 45.50,
+        "hire_date": "2021-04-22T16:00:00.000000",
+        "department": "Maintenance",
+        "is_on_call": false,
+        "certification_level": "Expert",
+        "specialization": "Electrical Systems"
+      },
+      {
+        "employee_id": "MT003",
+        "name": "Carlos Rodriguez",
+        "role": "maintenance_tech",
+        "shift": "night",
+        "skill_level": 3,
+        "hourly_rate": 39.25,
+        "hire_date": "2023-05-18T00:00:00.000000",
+        "department": "Maintenance",
+        "is_on_call": false,
+        "certification_level": "Intermediate",
+        "specialization": "Hydraulic Systems"
+      },
+      {
+        "employee_id": "MT004",
+        "name": "Lisa Park",
+        "role": "maintenance_tech",
+        "shift": "morning",
+        "skill_level": 4,
+        "hourly_rate": 41.00,
+        "hire_date": "2022-12-03T08:00:00.000000",
+        "department": "Maintenance",
+        "is_on_call": false,
+        "certification_level": "Advanced",
+        "specialization": "Control Systems"
+      }
+    ],
+    "employee_skills": [
+      {
+        "employee_id": "OP001",
+        "machine_id": "GB001",
+        "skill_level": 5,
+        "proficiency_level": 5,
+        "certification_date": "2024-01-15T08:00:00.000000",
+        "notes": "Expert in gearbox assembly and torque specifications"
+      },
+      {
+        "employee_id": "OP001",
+        "machine_id": "GN001",
+        "skill_level": 4,
+        "proficiency_level": 3,
+        "certification_date": "2024-03-20T08:00:00.000000",
+        "notes": "Certified on generator mounting operations"
+      },
+      {
+        "employee_id": "OP001",
+        "machine_id": "CT001",
+        "skill_level": 3,
+        "proficiency_level": 2,
+        "certification_date": "2024-06-10T08:00:00.000000",
+        "notes": "Basic control system testing certification"
+      },
+      {
+        "employee_id": "OP002",
+        "machine_id": "CL001",
+        "skill_level": 5,
+        "proficiency_level": 5,
+        "certification_date": "2023-08-15T08:00:00.000000",
+        "notes": "Expert in composite layup and resin mixing"
+      },
+      {
+        "employee_id": "OP002",
+        "machine_id": "CR001",
+        "skill_level": 5,
+        "proficiency_level": 4,
+        "certification_date": "2023-10-22T08:00:00.000000",
+        "notes": "Advanced curing process specialist"
+      },
+      {
+        "employee_id": "OP002",
+        "machine_id": "BF001",
+        "skill_level": 4,
+        "proficiency_level": 3,
+        "certification_date": "2024-02-18T08:00:00.000000",
+        "notes": "Certified on CNC blade finishing operations"
+      },
+      {
+        "employee_id": "OP003",
+        "machine_id": "WL001",
+        "skill_level": 5,
+        "proficiency_level": 5,
+        "certification_date": "2024-01-08T16:00:00.000000",
+        "notes": "Expert welder with robotic welding certification"
+      },
+      {
+        "employee_id": "OP003",
+        "machine_id": "PT001",
+        "skill_level": 4,
+        "proficiency_level": 4,
+        "certification_date": "2024-04-12T16:00:00.000000",
+        "notes": "Advanced paint booth operations"
+      },
+      {
+        "employee_id": "OP003",
+        "machine_id": "FT001",
+        "skill_level": 3,
+        "proficiency_level": 3,
+        "certification_date": "2024-07-25T16:00:00.000000",
+        "notes": "Final testing procedures certification"
+      },
+      {
+        "employee_id": "OP004",
+        "machine_id": "GN001",
+        "skill_level": 5,
+        "proficiency_level": 5,
+        "certification_date": "2023-12-10T16:00:00.000000",
+        "notes": "Expert in generator mounting and alignment"
+      },
+      {
+        "employee_id": "OP004",
+        "machine_id": "GB001",
+        "skill_level": 4,
+        "proficiency_level": 3,
+        "certification_date": "2024-05-15T16:00:00.000000",
+        "notes": "Certified on gearbox operations"
+      },
+      {
+        "employee_id": "OP004",
+        "machine_id": "CT001",
+        "skill_level": 5,
+        "proficiency_level": 4,
+        "certification_date": "2024-08-20T16:00:00.000000",
+        "notes": "Advanced control system testing specialist"
+      },
+      {
+        "employee_id": "OP005",
+        "machine_id": "FT001",
+        "skill_level": 5,
+        "proficiency_level": 5,
+        "certification_date": "2023-09-12T00:00:00.000000",
+        "notes": "Expert in final turbine testing and quality validation"
+      },
+      {
+        "employee_id": "OP005",
+        "machine_id": "CL001",
+        "skill_level": 3,
+        "proficiency_level": 3,
+        "certification_date": "2024-01-30T00:00:00.000000",
+        "notes": "Basic composite layup certification"
+      },
+      {
+        "employee_id": "OP005",
+        "machine_id": "WL001",
+        "skill_level": 2,
+        "proficiency_level": 2,
+        "certification_date": "2024-06-05T00:00:00.000000",
+        "notes": "Basic welding operations certification"
+      }
+    ],
+    "machine_assignments": [
+      {
+        "assignment_id": "ASSIGN-0001",
+        "employee_id": "OP001",
+        "machine_id": "GB001",
+        "start_time": "2025-10-02T08:00:00.000000",
+        "end_time": "2025-10-02T16:00:00.000000",
+        "assignment_type": "operation",
+        "status": "in_progress"
+      },
+      {
+        "assignment_id": "ASSIGN-0002",
+        "employee_id": "OP002",
+        "machine_id": "CL001",
+        "start_time": "2025-10-02T06:00:00.000000",
+        "end_time": "2025-10-03T06:00:00.000000",
+        "assignment_type": "operation",
+        "status": "scheduled"
+      },
+      {
+        "assignment_id": "ASSIGN-0003",
+        "employee_id": "OP003",
+        "machine_id": "WL001",
+        "start_time": "2025-10-01T16:00:00.000000",
+        "end_time": "2025-10-02T08:00:00.000000",
+        "assignment_type": "operation",
+        "status": "completed"
+      },
+      {
+        "assignment_id": "ASSIGN-0004",
+        "employee_id": "OP004",
+        "machine_id": "GN001",
+        "start_time": "2025-10-02T14:00:00.000000",
+        "end_time": "2025-10-02T22:00:00.000000",
+        "assignment_type": "operation",
+        "status": "in_progress"
+      },
+      {
+        "assignment_id": "ASSIGN-0005",
+        "employee_id": "OP005",
+        "machine_id": "FT001",
+        "start_time": "2025-10-03T00:00:00.000000",
+        "end_time": "2025-10-03T16:00:00.000000",
+        "assignment_type": "operation",
+        "status": "scheduled"
+      },
+      {
+        "assignment_id": "ASSIGN-0006",
+        "employee_id": "MT002",
+        "machine_id": "CR001",
+        "start_time": "2025-10-02T10:00:00.000000",
+        "end_time": "2025-10-02T18:00:00.000000",
+        "assignment_type": "maintenance",
+        "status": "in_progress"
+      },
+      {
+        "assignment_id": "ASSIGN-0007",
+        "employee_id": "MT001",
+        "machine_id": "BF001",
+        "start_time": "2025-10-02T16:00:00.000000",
+        "end_time": "2025-10-03T02:00:00.000000",
+        "assignment_type": "maintenance",
+        "status": "scheduled"
+      },
+      {
+        "assignment_id": "ASSIGN-0008",
+        "employee_id": "OP003",
+        "machine_id": "PT001",
+        "start_time": "2025-10-03T06:00:00.000000",
+        "end_time": "2025-10-03T14:00:00.000000",
+        "assignment_type": "operation",
+        "status": "scheduled"
+      },
+      {
+        "assignment_id": "ASSIGN-0009",
+        "employee_id": "OP001",
+        "machine_id": "CT001",
+        "start_time": "2025-10-04T08:00:00.000000",
+        "end_time": "2025-10-04T20:00:00.000000",
+        "assignment_type": "operation",
+        "status": "scheduled"
+      },
+      {
+        "assignment_id": "ASSIGN-0010",
+        "employee_id": "MT004",
+        "machine_id": "CT001",
+        "start_time": "2025-10-02T12:00:00.000000",
+        "end_time": "2025-10-02T16:00:00.000000",
+        "assignment_type": "maintenance",
+        "status": "completed"
+      }
+    ],
+    "shift_schedules": [
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-01",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-02",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-03",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-04",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-05",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-06",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP001",
+        "date": "2025-10-07",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-01",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-02",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "absent"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-03",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-04",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-05",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-06",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP002",
+        "date": "2025-10-07",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-01",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-02",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-03",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "absent"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-04",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-05",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-06",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP003",
+        "date": "2025-10-07",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-01",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-02",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-03",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-04",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-05",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-06",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP004",
+        "date": "2025-10-07",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-01",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-02",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-03",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-04",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-05",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "absent"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-06",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "OP005",
+        "date": "2025-10-07",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-01",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-02",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-03",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-04",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-05",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-06",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT001",
+        "date": "2025-10-07",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-01",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-02",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-03",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-04",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-05",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-06",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT002",
+        "date": "2025-10-07",
+        "shift": "afternoon",
+        "start_time": "16:00:00",
+        "end_time": "00:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-01",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-02",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-03",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-04",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-05",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "absent"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-06",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT003",
+        "date": "2025-10-07",
+        "shift": "night",
+        "start_time": "00:00:00",
+        "end_time": "08:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-01",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-02",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-03",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-04",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "overtime"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-05",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-06",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "employee_id": "MT004",
+        "date": "2025-10-07",
+        "shift": "morning",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
+        "status": "scheduled"
+      }
+    ],
+    "workforce_metrics": {
+      "total_employees": 9,
+      "operators": 5,
+      "maintenance_techs": 4,
+      "average_skill_level": 4.2,
+      "certification_compliance": 0.95,
+      "departments": {
+        "Nacelle Assembly": 2,
+        "Blade Manufacturing": 1,
+        "Tower Assembly": 1,
+        "Logistics & Testing": 1,
+        "Maintenance": 4
+      },
+      "shift_coverage": {
+        "morning": 4,
+        "afternoon": 3,
+        "night": 2
+      }
+    },
+    "training_records": [
+      {
+        "employee_id": "OP001",
+        "training_type": "Safety Certification",
+        "completion_date": "2024-09-15T08:00:00.000000",
+        "expiry_date": "2025-09-15T08:00:00.000000",
+        "status": "current"
+      },
+      {
+        "employee_id": "OP002",
+        "training_type": "Composite Materials Handling",
+        "completion_date": "2024-08-20T08:00:00.000000",
+        "expiry_date": "2026-08-20T08:00:00.000000",
+        "status": "current"
+      },
+      {
+        "employee_id": "OP003",
+        "training_type": "Welding Certification",
+        "completion_date": "2024-07-10T16:00:00.000000",
+        "expiry_date": "2025-07-10T16:00:00.000000",
+        "status": "expiring_soon"
+      },
+      {
+        "employee_id": "OP004",
+        "training_type": "Electrical Safety",
+        "completion_date": "2024-06-05T16:00:00.000000",
+        "expiry_date": "2025-06-05T16:00:00.000000",
+        "status": "current"
+      },
+      {
+        "employee_id": "OP005",
+        "training_type": "Quality Control Procedures",
+        "completion_date": "2024-05-12T00:00:00.000000",
+        "expiry_date": "2025-05-12T00:00:00.000000",
+        "status": "current"
+      },
+      {
+        "employee_id": "MT001",
+        "training_type": "Mechanical Systems Maintenance",
+        "completion_date": "2024-04-18T08:00:00.000000",
+        "expiry_date": "2026-04-18T08:00:00.000000",
+        "status": "current"
+      },
+      {
+        "employee_id": "MT002",
+        "training_type": "High Voltage Electrical Work",
+        "completion_date": "2024-03-25T16:00:00.000000",
+        "expiry_date": "2025-03-25T16:00:00.000000",
+        "status": "expiring_soon"
+      },
+      {
+        "employee_id": "MT003",
+        "training_type": "Hydraulic Systems",
+        "completion_date": "2024-02-14T00:00:00.000000",
+        "expiry_date": "2025-02-14T00:00:00.000000",
+        "status": "expiring_soon"
+      },
+      {
+        "employee_id": "MT004",
+        "training_type": "Control Systems Programming",
+        "completion_date": "2024-01-30T08:00:00.000000",
+        "expiry_date": "2026-01-30T08:00:00.000000",
+        "status": "current"
+      }
+    ]
+  }
+}

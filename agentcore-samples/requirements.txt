@@ -1,0 +1,15 @@
+boto3
+mcp[cli]
+fastmcp
+nova-act
+opensearch-py
+pandas
+retrying
+strands-agents 
+strands-agents-tools[mem0_memory]
+streamlit
+tqdm
+uv
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit
+

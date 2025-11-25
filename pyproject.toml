@@ -1,0 +1,16 @@
+[project]
+name = "aws-agentic-ai-manufacturing-partner-hackathon"
+version = "0.1.0"
+description = "This code is just helping you build faster"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.35.0",
+    "fastmcp>=2.10.1",
+    "mcp>=1.10.0",
+    "python-dotenv>=1.1.1",
+    "strands-agents>=1.1.0",
+    "strands-agents-tools>=0.2.0",
+    "bedrock-agentcore>=1.0.0",
+    "bedrock-agentcore-starter-toolkit>=0.1.25"
+]

@@ -1,0 +1,610 @@
+{
+  "metadata": {
+    "system": "mes",
+    "data_type": "production_data",
+    "last_updated": "2025-10-02T12:00:00.000000",
+    "version": "2.0",
+    "generated_locally": true,
+    "description": "Wind Turbine Assembly Plant MES Data"
+  },
+  "data": {
+    "work_centers": [
+      {
+        "work_center_id": "WC001",
+        "name": "Nacelle Assembly",
+        "description": "Manufacturing work center for Nacelle Assembly",
+        "location": "Line 1: Nacelle Assembly",
+        "capacity": 12,
+        "capacity_uom": "nacelles/day"
+      },
+      {
+        "work_center_id": "WC002",
+        "name": "Blade Manufacturing",
+        "description": "Manufacturing work center for Blade Manufacturing",
+        "location": "Line 2: Blade Manufacturing",
+        "capacity": 36,
+        "capacity_uom": "blades/day"
+      },
+      {
+        "work_center_id": "WC003",
+        "name": "Tower Assembly",
+        "description": "Manufacturing work center for Tower Assembly",
+        "location": "Line 3: Tower Assembly",
+        "capacity": 15,
+        "capacity_uom": "towers/day"
+      },
+      {
+        "work_center_id": "WC004",
+        "name": "Logistics & Testing",
+        "description": "Manufacturing work center for Logistics & Testing",
+        "location": "Logistics & Testing",
+        "capacity": 12,
+        "capacity_uom": "turbines/day"
+      }
+    ],
+    "machines": [
+      {
+        "machine_id": "GB001",
+        "name": "Gearbox Station",
+        "type": "GEARBOX_PRESS",
+        "work_center_id": "WC001",
+        "status": "running",
+        "nominal_capacity": 2,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.92,
+        "setup_time": 2.5,
+        "maintenance_frequency": 45,
+        "last_maintenance_date": "2025-09-15T08:00:00.000000",
+        "next_maintenance_date": "2025-11-30T08:00:00.000000",
+        "cost_per_hour": 285.50,
+        "model_number": "MODEL-GB001-2024"
+      },
+      {
+        "machine_id": "GN001",
+        "name": "Generator Station",
+        "type": "GENERATOR_MOUNT",
+        "work_center_id": "WC001",
+        "status": "idle",
+        "nominal_capacity": 3,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.88,
+        "setup_time": 1.8,
+        "maintenance_frequency": 60,
+        "last_maintenance_date": "2025-08-20T08:00:00.000000",
+        "next_maintenance_date": "2025-12-15T08:00:00.000000",
+        "cost_per_hour": 195.75,
+        "model_number": "MODEL-GN001-2024"
+      },
+      {
+        "machine_id": "CT001",
+        "name": "Control System Test",
+        "type": "CONTROL_TEST_BENCH",
+        "work_center_id": "WC001",
+        "status": "running",
+        "nominal_capacity": 4,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.95,
+        "setup_time": 0.5,
+        "maintenance_frequency": 30,
+        "last_maintenance_date": "2025-09-25T08:00:00.000000",
+        "next_maintenance_date": "2025-10-25T08:00:00.000000",
+        "cost_per_hour": 125.25,
+        "model_number": "MODEL-CT001-2024"
+      },
+      {
+        "machine_id": "CL001",
+        "name": "Composite Layup",
+        "type": "RESIN_MIXER",
+        "work_center_id": "WC002",
+        "status": "running",
+        "nominal_capacity": 1,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.85,
+        "setup_time": 3.0,
+        "maintenance_frequency": 21,
+        "last_maintenance_date": "2025-09-10T08:00:00.000000",
+        "next_maintenance_date": "2025-10-01T08:00:00.000000",
+        "cost_per_hour": 165.80,
+        "model_number": "MODEL-CL001-2024"
+      },
+      {
+        "machine_id": "CR001",
+        "name": "Curing",
+        "type": "CURING_OVEN",
+        "work_center_id": "WC002",
+        "status": "breakdown",
+        "nominal_capacity": 1,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.90,
+        "setup_time": 4.0,
+        "maintenance_frequency": 14,
+        "last_maintenance_date": "2025-09-18T08:00:00.000000",
+        "next_maintenance_date": "2025-10-02T08:00:00.000000",
+        "cost_per_hour": 245.60,
+        "model_number": "MODEL-CR001-2024"
+      }
+,
+    {
+        "machine_id": "BF001",
+        "name": "Blade Finishing",
+        "type": "CNC_CUTTER",
+        "work_center_id": "WC002",
+        "status": "maintenance",
+        "nominal_capacity": 2,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.93,
+        "setup_time": 1.5,
+        "maintenance_frequency": 35,
+        "last_maintenance_date": "2025-09-28T08:00:00.000000",
+        "next_maintenance_date": "2025-11-02T08:00:00.000000",
+        "cost_per_hour": 185.40,
+        "model_number": "MODEL-BF001-2024"
+      },
+      {
+        "machine_id": "WL001",
+        "name": "Welding",
+        "type": "WELDING_ROBOT",
+        "work_center_id": "WC003",
+        "status": "running",
+        "nominal_capacity": 1,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.87,
+        "setup_time": 2.0,
+        "maintenance_frequency": 28,
+        "last_maintenance_date": "2025-09-05T08:00:00.000000",
+        "next_maintenance_date": "2025-10-03T08:00:00.000000",
+        "cost_per_hour": 225.90,
+        "model_number": "MODEL-WL001-2024"
+      },
+      {
+        "machine_id": "PT001",
+        "name": "Painting",
+        "type": "PAINT_BOOTH",
+        "work_center_id": "WC003",
+        "status": "idle",
+        "nominal_capacity": 2,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.91,
+        "setup_time": 1.0,
+        "maintenance_frequency": 42,
+        "last_maintenance_date": "2025-08-15T08:00:00.000000",
+        "next_maintenance_date": "2025-09-26T08:00:00.000000",
+        "cost_per_hour": 155.30,
+        "model_number": "MODEL-PT001-2024"
+      },
+      {
+        "machine_id": "FT001",
+        "name": "Final Test",
+        "type": "END_TEST_RIG",
+        "work_center_id": "WC004",
+        "status": "running",
+        "nominal_capacity": 1,
+        "capacity_uom": "units/hour",
+        "efficiency_factor": 0.96,
+        "setup_time": 0.75,
+        "maintenance_frequency": 56,
+        "last_maintenance_date": "2025-09-12T08:00:00.000000",
+        "next_maintenance_date": "2025-11-07T08:00:00.000000",
+        "cost_per_hour": 315.75,
+        "model_number": "MODEL-FT001-2024"
+      }
+    ],
+    "machine_criticality": [
+      {
+        "machine_id": "GB001",
+        "impact_level": "line_stopped",
+        "is_bottleneck": true,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 100,
+        "analysis_notes": "Critical bottleneck for gearbox assembly - single point of failure"
+      },
+      {
+        "machine_id": "GN001",
+        "impact_level": "machine_only",
+        "is_bottleneck": false,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 85,
+        "analysis_notes": "Critical for generator mounting operations"
+      },
+      {
+        "machine_id": "CT001",
+        "impact_level": "machine_only",
+        "is_bottleneck": false,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 75,
+        "analysis_notes": "Essential for control system validation"
+      },
+      {
+        "machine_id": "CL001",
+        "impact_level": "line_stopped",
+        "is_bottleneck": true,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 100,
+        "analysis_notes": "Critical bottleneck for blade composite layup - longest process time"
+      },
+      {
+        "machine_id": "CR001",
+        "impact_level": "line_stopped",
+        "is_bottleneck": true,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 100,
+        "analysis_notes": "Critical bottleneck for blade curing - longest process time and single point of failure"
+      },
+      {
+        "machine_id": "BF001",
+        "impact_level": "machine_only",
+        "is_bottleneck": false,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 90,
+        "analysis_notes": "Critical for blade finishing operations"
+      },
+      {
+        "machine_id": "WL001",
+        "impact_level": "line_stopped",
+        "is_bottleneck": true,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 100,
+        "analysis_notes": "Critical bottleneck for tower welding - single point of failure"
+      },
+      {
+        "machine_id": "PT001",
+        "impact_level": "machine_only",
+        "is_bottleneck": false,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 80,
+        "analysis_notes": "Critical for tower painting operations"
+      },
+      {
+        "machine_id": "FT001",
+        "impact_level": "line_stopped",
+        "is_bottleneck": false,
+        "is_single_point_failure": true,
+        "backup_machine_count": 0,
+        "capacity_impact_percentage": 95,
+        "analysis_notes": "Critical for final turbine testing - quality gate"
+      }
+    ],
+    "work_orders": [
+      {
+        "order_id": "MES-WO-0001",
+        "product_id": "WT-2MW",
+        "machine_id": "GB001",
+        "work_center_id": "WC001",
+        "employee_id": "OP001",
+        "quantity": 1,
+        "status": "in_progress",
+        "priority": "high",
+        "planned_start_time": "2025-10-02T08:00:00.000000",
+        "planned_end_time": "2025-10-02T16:00:00.000000",
+        "actual_start_time": "2025-10-02T08:15:00.000000",
+        "actual_end_time": null,
+        "lot_number": "LOT-WT2MW-001"
+      },
+      {
+        "order_id": "MES-WO-0002",
+        "product_id": "WT-3MW",
+        "machine_id": "CL001",
+        "work_center_id": "WC002",
+        "employee_id": "OP002",
+        "quantity": 3,
+        "status": "scheduled",
+        "priority": "medium",
+        "planned_start_time": "2025-10-02T06:00:00.000000",
+        "planned_end_time": "2025-10-03T06:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT3MW-001"
+      },
+      {
+        "order_id": "MES-WO-0003",
+        "product_id": "WT-5MW",
+        "machine_id": "CR001",
+        "work_center_id": "WC002",
+        "employee_id": "OP002",
+        "quantity": 3,
+        "status": "on_hold",
+        "priority": "urgent",
+        "planned_start_time": "2025-10-02T10:00:00.000000",
+        "planned_end_time": "2025-10-04T10:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT5MW-001"
+      },
+      {
+        "order_id": "MES-WO-0004",
+        "product_id": "WT-2MW",
+        "machine_id": "WL001",
+        "work_center_id": "WC003",
+        "employee_id": "OP003",
+        "quantity": 1,
+        "status": "completed",
+        "priority": "high",
+        "planned_start_time": "2025-10-01T08:00:00.000000",
+        "planned_end_time": "2025-10-02T00:00:00.000000",
+        "actual_start_time": "2025-10-01T08:00:00.000000",
+        "actual_end_time": "2025-10-01T23:45:00.000000",
+        "lot_number": "LOT-WT2MW-002"
+      },
+      {
+        "order_id": "MES-WO-0005",
+        "product_id": "WT-8MW",
+        "machine_id": "FT001",
+        "work_center_id": "WC004",
+        "employee_id": "OP005",
+        "quantity": 1,
+        "status": "scheduled",
+        "priority": "urgent",
+        "planned_start_time": "2025-10-03T08:00:00.000000",
+        "planned_end_time": "2025-10-04T00:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT8MW-001"
+      },
+      {
+        "order_id": "MES-WO-0006",
+        "product_id": "WT-3MW",
+        "machine_id": "GN001",
+        "work_center_id": "WC001",
+        "employee_id": "OP004",
+        "quantity": 1,
+        "status": "in_progress",
+        "priority": "medium",
+        "planned_start_time": "2025-10-02T14:00:00.000000",
+        "planned_end_time": "2025-10-02T22:00:00.000000",
+        "actual_start_time": "2025-10-02T14:30:00.000000",
+        "actual_end_time": null,
+        "lot_number": "LOT-WT3MW-002"
+      },
+      {
+        "order_id": "MES-WO-0007",
+        "product_id": "WT-5MW",
+        "machine_id": "BF001",
+        "work_center_id": "WC002",
+        "employee_id": "MT002",
+        "quantity": 3,
+        "status": "on_hold",
+        "priority": "high",
+        "planned_start_time": "2025-10-02T16:00:00.000000",
+        "planned_end_time": "2025-10-03T02:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT5MW-002"
+      },
+      {
+        "order_id": "MES-WO-0008",
+        "product_id": "WT-2MW",
+        "machine_id": "PT001",
+        "work_center_id": "WC003",
+        "employee_id": "OP003",
+        "quantity": 1,
+        "status": "scheduled",
+        "priority": "medium",
+        "planned_start_time": "2025-10-03T06:00:00.000000",
+        "planned_end_time": "2025-10-03T14:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT2MW-003"
+      },
+      {
+        "order_id": "MES-WO-0009",
+        "product_id": "WT-8MW",
+        "machine_id": "CT001",
+        "work_center_id": "WC001",
+        "employee_id": "OP001",
+        "quantity": 1,
+        "status": "scheduled",
+        "priority": "urgent",
+        "planned_start_time": "2025-10-04T08:00:00.000000",
+        "planned_end_time": "2025-10-04T20:00:00.000000",
+        "actual_start_time": null,
+        "actual_end_time": null,
+        "lot_number": "LOT-WT8MW-002"
+      },
+      {
+        "order_id": "MES-WO-0010",
+        "product_id": "WT-3MW",
+        "machine_id": "CL001",
+        "work_center_id": "WC002",
+        "employee_id": "OP002",
+        "quantity": 3,
+        "status": "completed",
+        "priority": "medium",
+        "planned_start_time": "2025-09-30T08:00:00.000000",
+        "planned_end_time": "2025-10-01T08:00:00.000000",
+        "actual_start_time": "2025-09-30T08:00:00.000000",
+        "actual_end_time": "2025-10-01T07:30:00.000000",
+        "lot_number": "LOT-WT3MW-003"
+      }
+    ],
+    "production_metrics": {
+      "daily_targets": {
+        "WT-2MW": 2,
+        "WT-3MW": 1,
+        "WT-5MW": 1,
+        "WT-8MW": 0.5
+      },
+      "current_efficiency": {
+        "WC001": 0.89,
+        "WC002": 0.75,
+        "WC003": 0.92,
+        "WC004": 0.94
+      },
+      "bottleneck_analysis": {
+        "primary_bottleneck": "CR001",
+        "secondary_bottleneck": "CL001",
+        "constraint_impact": "Blade manufacturing curing process limits overall throughput"
+      }
+    },
+    "quality_metrics": [
+      {
+        "machine_id": "GB001",
+        "measurement": "Torque (Nm)",
+        "target_range": [1800, 2200],
+        "current_value": 1950,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "GB001",
+        "measurement": "Vibration (mm/s)",
+        "target_range": [0, 5],
+        "current_value": 3.2,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "GB001",
+        "measurement": "Temperature (°C)",
+        "target_range": [20, 80],
+        "current_value": 65,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "GN001",
+        "measurement": "Mounting Force (kN)",
+        "target_range": [10, 20],
+        "current_value": 15.5,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "GN001",
+        "measurement": "Alignment Offset (mm)",
+        "target_range": [0, 0.5],
+        "current_value": 0.3,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CT001",
+        "measurement": "Voltage (V)",
+        "target_range": [380, 420],
+        "current_value": 400,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CT001",
+        "measurement": "Current (A)",
+        "target_range": [10, 50],
+        "current_value": 35,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CT001",
+        "measurement": "Test Result (boolean)",
+        "target_range": ["Pass", "Fail"],
+        "current_value": "Pass",
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CL001",
+        "measurement": "Resin Viscosity (Pa·s)",
+        "target_range": [95, 105],
+        "current_value": 102,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CL001",
+        "measurement": "Mix Temperature (°C)",
+        "target_range": [20, 30],
+        "current_value": 25,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CR001",
+        "measurement": "Oven Temperature (°C)",
+        "target_range": [150, 210],
+        "current_value": 180,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CR001",
+        "measurement": "Humidity (%RH)",
+        "target_range": [40, 60],
+        "current_value": 50,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "CR001",
+        "measurement": "Pressure (bar)",
+        "target_range": [1, 2],
+        "current_value": 1.5,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "BF001",
+        "measurement": "Tool Wear (%)",
+        "target_range": [0, 80],
+        "current_value": 45,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "BF001",
+        "measurement": "Spindle Vibration (mm/s)",
+        "target_range": [0, 4],
+        "current_value": 2.1,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "WL001",
+        "measurement": "Weld Current (A)",
+        "target_range": [200, 250],
+        "current_value": 225,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "WL001",
+        "measurement": "Weld Temperature (°C)",
+        "target_range": [1200, 1400],
+        "current_value": 1300,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "WL001",
+        "measurement": "Arc Stability (%)",
+        "target_range": [90, 100],
+        "current_value": 95,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "PT001",
+        "measurement": "Spray Pressure (bar)",
+        "target_range": [2, 4],
+        "current_value": 3.2,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "PT001",
+        "measurement": "Paint Thickness (μm)",
+        "target_range": [90, 110],
+        "current_value": 105,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "FT001",
+        "measurement": "Rotor Balance (mm)",
+        "target_range": [0, 1],
+        "current_value": 0.3,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "FT001",
+        "measurement": "Vibration RMS (mm/s)",
+        "target_range": [0, 5],
+        "current_value": 2.8,
+        "status": "within_spec"
+      },
+      {
+        "machine_id": "FT001",
+        "measurement": "Noise Level (dB)",
+        "target_range": [50, 70],
+        "current_value": 62,
+        "status": "within_spec"
+      }
+    ]
+  }
+}

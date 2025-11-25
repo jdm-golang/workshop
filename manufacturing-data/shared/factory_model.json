@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "system": "shared",
+    "data_type": "factory_model",
+    "last_updated": "2025-10-02T12:00:00.000000",
+    "version": "2.0",
+    "generated_locally": true,
+    "description": "Wind Turbine Assembly Plant"
+  },
+  "management": {
+    "plant_manager": {
+      "name": "Lars Andersson",
+      "title": "Plant Manager",
+      "phone": "+46 70 123 4567",
+      "email": "lars.andersson@octankssonturbines.com"
+    },
+    "maintenance_manager": {
+      "name": "Ingrid Bergström",
+      "title": "Maintenance Manager",
+      "phone": "+46 70 234 5678",
+      "email": "ingrid.bergstrom@octankssonturbines.com"
+    },
+    "purchasing_department": {
+      "manager": {
+        "name": "Erik Johansson",
+        "title": "Purchasing Manager",
+        "phone": "+46 70 345 6789",
+        "email": "erik.johansson@octankssonturbines.com"
+      },
+      "contact": {
+        "name": "Anna Svensson",
+        "title": "Senior Buyer",
+        "phone": "+46 70 456 7890",
+        "email": "anna.svensson@octankssonturbines.com"
+      }
+    }
+  },
+  "data": {
+    "machine_types": [
+      {
+        "type_id": "GEARBOX_PRESS",
+        "name": "Gearbox Press",
+        "work_center": "Nacelle Assembly"
+      },
+      {
+        "type_id": "GENERATOR_MOUNT",
+        "name": "Generator Mount",
+        "work_center": "Nacelle Assembly"
+      },
+      {
+        "type_id": "CONTROL_TEST_BENCH",
+        "name": "Control Test Bench",
+        "work_center": "Nacelle Assembly"
+      },
+      {
+        "type_id": "RESIN_MIXER",
+        "name": "Resin Mixer",
+        "work_center": "Blade Manufacturing"
+      },
+      {
+        "type_id": "CURING_OVEN",
+        "name": "Curing Oven",
+        "work_center": "Blade Manufacturing"
+      },
+      {
+        "type_id": "CNC_CUTTER",
+        "name": "CNC Cutter",
+        "work_center": "Blade Manufacturing"
+      },
+      {
+        "type_id": "WELDING_ROBOT",
+        "name": "Welding Robot",
+        "work_center": "Tower Assembly"
+      },
+      {
+        "type_id": "PAINT_BOOTH",
+        "name": "Paint Booth",
+        "work_center": "Tower Assembly"
+      },
+      {
+        "type_id": "END_TEST_RIG",
+        "name": "End Test Rig",
+        "work_center": "Logistics & Testing"
+      }
+    ],
+    "machines": [
+      {
+        "machine_id": "GB001",
+        "name": "Gearbox Station",
+        "type_id": "GEARBOX_PRESS",
+        "location": "Line 1: Nacelle Assembly, Station 1"
+      },
+      {
+        "machine_id": "GN001",
+        "name": "Generator Station",
+        "type_id": "GENERATOR_MOUNT",
+        "location": "Line 1: Nacelle Assembly, Station 2"
+      },
+      {
+        "machine_id": "CT001",
+        "name": "Control System Test",
+        "type_id": "CONTROL_TEST_BENCH",
+        "location": "Line 1: Nacelle Assembly, Station 3"
+      },
+      {
+        "machine_id": "CL001",
+        "name": "Composite Layup",
+        "type_id": "RESIN_MIXER",
+        "location": "Line 2: Blade Manufacturing, Station 1"
+      },
+      {
+        "machine_id": "CR001",
+        "name": "Curing",
+        "type_id": "CURING_OVEN",
+        "location": "Line 2: Blade Manufacturing, Station 2"
+      },
+      {
+        "machine_id": "BF001",
+        "name": "Blade Finishing",
+        "type_id": "CNC_CUTTER",
+        "location": "Line 2: Blade Manufacturing, Station 3"
+      },
+      {
+        "machine_id": "WL001",
+        "name": "Welding",
+        "type_id": "WELDING_ROBOT",
+        "location": "Line 3: Tower Assembly, Station 1"
+      },
+      {
+        "machine_id": "PT001",
+        "name": "Painting",
+        "type_id": "PAINT_BOOTH",
+        "location": "Line 3: Tower Assembly, Station 2"
+      },
+      {
+        "machine_id": "FT001",
+        "name": "Final Test",
+        "type_id": "END_TEST_RIG",
+        "location": "Logistics & Testing, Station 1"
+      }
+    ],
+    "work_centers": [
+      {
+        "id": 1,
+        "name": "Nacelle Assembly",
+        "capacity": 12,
+        "capacity_uom": "nacelles/day",
+        "machine_types": [
+          "GEARBOX_PRESS",
+          "GENERATOR_MOUNT",
+          "CONTROL_TEST_BENCH"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Blade Manufacturing",
+        "capacity": 36,
+        "capacity_uom": "blades/day",
+        "machine_types": [
+          "RESIN_MIXER",
+          "CURING_OVEN",
+          "CNC_CUTTER"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Tower Assembly",
+        "capacity": 15,
+        "capacity_uom": "towers/day",
+        "machine_types": [
+          "WELDING_ROBOT",
+          "PAINT_BOOTH"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Logistics & Testing",
+        "capacity": 12,
+        "capacity_uom": "turbines/day",
+        "machine_types": [
+          "END_TEST_RIG"
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "WT-2MW",
+        "name": "Wind Turbine 2MW",
+        "category": "Wind Turbines",
+        "description": "2 Megawatt onshore wind turbine",
+        "cost": 1250000.0
+      },
+      {
+        "id": "WT-3MW",
+        "name": "Wind Turbine 3MW",
+        "category": "Wind Turbines",
+        "description": "3 Megawatt onshore wind turbine",
+        "cost": 1800000.0
+      },
+      {
+        "id": "WT-5MW",
+        "name": "Wind Turbine 5MW",
+        "category": "Wind Turbines",
+        "description": "5 Megawatt offshore wind turbine",
+        "cost": 3200000.0
+      },
+      {
+        "id": "WT-8MW",
+        "name": "Wind Turbine 8MW",
+        "category": "Wind Turbines",
+        "description": "8 Megawatt offshore wind turbine with advanced controls",
+        "cost": 4500000.0
+      }
+    ],
+    "operators": [
+      {
+        "id": "OP001",
+        "name": "John Doe",
+        "role": "operator",
+        "shift": "morning",
+        "skills": {
+          "GB001": 4,
+          "GN001": 3,
+          "CT001": 2
+        }
+      },
+      {
+        "id": "OP002",
+        "name": "Jane Smith",
+        "role": "operator",
+        "shift": "morning",
+        "skills": {
+          "CL001": 5,
+          "CR001": 4,
+          "BF001": 3
+        }
+      },
+      {
+        "id": "OP003",
+        "name": "Bob Johnson",
+        "role": "operator",
+        "shift": "afternoon",
+        "skills": {
+          "WL001": 5,
+          "PT001": 4,
+          "FT001": 3
+        }
+      },
+      {
+        "id": "OP004",
+        "name": "Maria Garcia",
+        "role": "operator",
+        "shift": "afternoon",
+        "skills": {
+          "GB001": 3,
+          "GN001": 5,
+          "CT001": 4
+        }
+      },
+      {
+        "id": "OP005",
+        "name": "Ahmed Hassan",
+        "role": "operator",
+        "shift": "night",
+        "skills": {
+          "FT001": 5,
+          "CL001": 3,
+          "WL001": 2
+        }
+      }
+    ],
+    "maintenance_techs": [
+      {
+        "id": "MT001",
+        "name": "Mike Wilson",
+        "role": "maintenance_tech",
+        "shift": "morning",
+        "specialization": "Mechanical",
+        "skill_level": 4,
+        "on_call": true
+      },
+      {
+        "id": "MT002",
+        "name": "Sarah Chen",
+        "role": "maintenance_tech",
+        "shift": "afternoon",
+        "specialization": "Electrical",
+        "skill_level": 5,
+        "on_call": false
+      },
+      {
+        "id": "MT003",
+        "name": "Carlos Rodriguez",
+        "role": "maintenance_tech",
+        "shift": "night",
+        "specialization": "Hydraulic",
+        "skill_level": 3,
+        "on_call": false
+      },
+      {
+        "id": "MT004",
+        "name": "Lisa Park",
+        "role": "maintenance_tech",
+        "shift": "morning",
+        "specialization": "Software",
+        "skill_level": 4,
+        "on_call": false
+      }
+    ],
+    "production_routes": {
+      "WT-2MW": [
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GEARBOX_PRESS",
+          "duration_hours": 8.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GENERATOR_MOUNT",
+          "duration_hours": 6.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "CONTROL_TEST_BENCH",
+          "duration_hours": 4.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "RESIN_MIXER",
+          "duration_hours": 12.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CURING_OVEN",
+          "duration_hours": 24.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CNC_CUTTER",
+          "duration_hours": 8.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "WELDING_ROBOT",
+          "duration_hours": 16.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "PAINT_BOOTH",
+          "duration_hours": 8.0
+        },
+        {
+          "work_center": "Logistics & Testing",
+          "machine_type": "END_TEST_RIG",
+          "duration_hours": 6.0
+        }
+      ],
+      "WT-3MW": [
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GEARBOX_PRESS",
+          "duration_hours": 10.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GENERATOR_MOUNT",
+          "duration_hours": 8.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "CONTROL_TEST_BENCH",
+          "duration_hours": 5.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "RESIN_MIXER",
+          "duration_hours": 16.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CURING_OVEN",
+          "duration_hours": 30.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CNC_CUTTER",
+          "duration_hours": 10.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "WELDING_ROBOT",
+          "duration_hours": 20.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "PAINT_BOOTH",
+          "duration_hours": 10.0
+        },
+        {
+          "work_center": "Logistics & Testing",
+          "machine_type": "END_TEST_RIG",
+          "duration_hours": 8.0
+        }
+      ],
+      "WT-5MW": [
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GEARBOX_PRESS",
+          "duration_hours": 14.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GENERATOR_MOUNT",
+          "duration_hours": 12.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "CONTROL_TEST_BENCH",
+          "duration_hours": 8.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "RESIN_MIXER",
+          "duration_hours": 24.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CURING_OVEN",
+          "duration_hours": 36.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CNC_CUTTER",
+          "duration_hours": 14.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "WELDING_ROBOT",
+          "duration_hours": 28.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "PAINT_BOOTH",
+          "duration_hours": 14.0
+        },
+        {
+          "work_center": "Logistics & Testing",
+          "machine_type": "END_TEST_RIG",
+          "duration_hours": 12.0
+        }
+      ],
+      "WT-8MW": [
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GEARBOX_PRESS",
+          "duration_hours": 18.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "GENERATOR_MOUNT",
+          "duration_hours": 16.0
+        },
+        {
+          "work_center": "Nacelle Assembly",
+          "machine_type": "CONTROL_TEST_BENCH",
+          "duration_hours": 12.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "RESIN_MIXER",
+          "duration_hours": 32.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CURING_OVEN",
+          "duration_hours": 48.0
+        },
+        {
+          "work_center": "Blade Manufacturing",
+          "machine_type": "CNC_CUTTER",
+          "duration_hours": 18.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "WELDING_ROBOT",
+          "duration_hours": 36.0
+        },
+        {
+          "work_center": "Tower Assembly",
+          "machine_type": "PAINT_BOOTH",
+          "duration_hours": 18.0
+        },
+        {
+          "work_center": "Logistics & Testing",
+          "machine_type": "END_TEST_RIG",
+          "duration_hours": 16.0
+        }
+      ]
+    }
+  }
+}
